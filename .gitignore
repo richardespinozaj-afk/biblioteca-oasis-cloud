@@ -1,0 +1,63 @@
+# Compiled class files
+*.class
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Gradle
+build/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# VS Code
+.vscode/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Application properties with secrets (opcional, descomentar si es necesario)
+# src/main/resources/application-prod.properties
+# src/main/resources/application-local.properties
+
+# Node / Angular (cuando agreguemos el frontend)
+node_modules/
+dist/
+.angular/
+
+# Docker volumes
+*.env
+
+# Misc
+*.swp
+*.swo
+*~
