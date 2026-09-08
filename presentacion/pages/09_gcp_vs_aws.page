@@ -1,0 +1,83 @@
+pageType: content
+background:
+  type: solid
+  color: "#ffffff"
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds: [0, 0, 960, 50]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: header-title
+    elementType: text
+    bounds: [30, 0, 500, 50]
+    content:
+      color: "#ffffff"
+      fontSize: 20
+      bold: true
+      align: [left, middle]
+      text: "4.1 Evaluación comparativa: GCP vs AWS"
+  - elementId: comparativa-table
+    elementType: table
+    bounds: [50, 80, 860, 320]
+    columnWidths: [0.30, 0.35, 0.35]
+    rowHeights: [0.12, 0.176, 0.176, 0.176, 0.176, 0.176]
+    style: "$default"
+    rows:
+      - - text: "Criterio"
+        - text: "Google Cloud Platform"
+        - text: "Amazon Web Services"
+      - - text: "Créditos estudiante"
+        - text: |
+            <p><strong style="color:#34a853">$300 / 90 días</strong></p>
+            <p>Más recursos para experimentar</p>
+        - text: |
+            <p>~$100 - $150</p>
+            <p>Menor presupuesto</p>
+      - - text: "Alineación curso"
+        - text: |
+            <p><strong style="color:#34a853">100% GCP</strong></p>
+            <p>Sílabo y laboratorios Quiklabs</p>
+        - text: |
+            <p>No alineado</p>
+            <p>Curso específico de GCP</p>
+      - - text: "Facilidad de uso"
+        - text: |
+            <p><strong style="color:#34a853">Interfaz limpia</strong></p>
+            <p>Amigable para principiantes</p>
+        - text: |
+            <p>Mayor complejidad</p>
+            <p>Más opciones, más confusión</p>
+      - - text: "Kubernetes"
+        - text: |
+            <p><strong style="color:#34a853">GKE - El mejor</strong></p>
+            <p>Google creó Kubernetes</p>
+        - text: |
+            <p>EKS - Competente</p>
+            <p>Más configuración manual</p>
+      - - text: "Cuota de mercado"
+        - text: |
+            <p>~10% (3º lugar)</p>
+            <p>Creciendo rápidamente</p>
+        - text: |
+            <p><strong>~32% (1º lugar)</strong></p>
+            <p>Líder del mercado</p>
+  - elementId: conclusion-title
+    elementType: text
+    bounds: [50, 420, 860, 30]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$secondary"
+      align: [left, middle]
+      text: "Conclusión:"
+  - elementId: conclusion-text
+    elementType: text
+    bounds: [50, 455, 860, 60]
+    content:
+      fontSize: 14
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p>Aunque AWS lidera el mercado global, <strong>GCP es la elección óptima</strong> para este proyecto universitario por:</p>
+        <p>créditos más generosos, alineación total con el curso, interfaz más amigable y GKE superior en Kubernetes.</p>

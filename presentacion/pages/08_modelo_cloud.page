@@ -1,0 +1,136 @@
+pageType: content
+background:
+  type: solid
+  color: "#ffffff"
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds: [0, 0, 960, 50]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: header-title
+    elementType: text
+    bounds: [30, 0, 500, 50]
+    content:
+      color: "#ffffff"
+      fontSize: 20
+      bold: true
+      align: [left, middle]
+      text: "4. Selección del modelo cloud"
+  - elementId: publica-box
+    elementType: shape
+    bounds: [50, 80, 270, 220]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e6f4ea"}
+    border: {style: solid, width: 3, color: "$secondary"}
+  - elementId: publica-icon
+    elementType: icon
+    bounds: [155, 100, 50, 50]
+    iconName: "fas:cloud"
+    fill: {type: solid, color: "$secondary"}
+  - elementId: publica-title
+    elementType: text
+    bounds: [60, 160, 250, 30]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$secondary"
+      align: [center, middle]
+      text: "Nube Pública ✅"
+  - elementId: publica-text
+    elementType: text
+    bounds: [60, 195, 250, 90]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p>GCP ofrece recursos bajo demanda</p>
+        <p>Créditos estudiante: $300/90 días</p>
+        <p>Sin inversión en hardware</p>
+  - elementId: privada-box
+    elementType: shape
+    bounds: [345, 80, 270, 220]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#fce8e6"}
+    border: {style: solid, width: 1, color: "#dadce0"}
+  - elementId: privada-icon
+    elementType: icon
+    bounds: [450, 100, 50, 50]
+    iconName: "fas:server"
+    fill: {type: solid, color: "#9e9e9e"}
+  - elementId: privada-title
+    elementType: text
+    bounds: [355, 160, 250, 30]
+    content:
+      fontSize: 16
+      bold: true
+      color: "#9e9e9e"
+      align: [center, middle]
+      text: "Nube Privada ❌"
+  - elementId: privada-text
+    elementType: text
+    bounds: [355, 195, 250, 90]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p>Requiere inversión en hardware</p>
+        <p>Personal especializado</p>
+        <p>Centro de datos propio</p>
+  - elementId: hibrida-box
+    elementType: shape
+    bounds: [640, 80, 270, 220]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#fff3e0"}
+    border: {style: solid, width: 1, color: "#dadce0"}
+  - elementId: hibrida-icon
+    elementType: icon
+    bounds: [745, 100, 50, 50]
+    iconName: "fas:cloud-arrow-up"
+    fill: {type: solid, color: "#9e9e9e"}
+  - elementId: hibrida-title
+    elementType: text
+    bounds: [650, 160, 250, 30]
+    content:
+      fontSize: 16
+      bold: true
+      color: "#9e9e9e"
+      align: [center, middle]
+      text: "Nube Híbrida ❌"
+  - elementId: hibrida-text
+    elementType: text
+    bounds: [650, 195, 250, 90]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p>No hay infraestructura local crítica</p>
+        <p>Servicios ejecutables 100% en cloud</p>
+        <p>Complejidad innecesaria</p>
+  - elementId: justificacion-title
+    elementType: text
+    bounds: [50, 330, 860, 30]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$primary"
+      align: [left, middle]
+      text: "Justificación de la elección:"
+  - elementId: justificacion-text
+    elementType: text
+    bounds: [50, 370, 860, 140]
+    content:
+      fontSize: 14
+      lineHeight: 1.6
+      align: [left, top]
+      text: |
+        <p><strong>1. Sin inversión inicial:</strong> No se requiere comprar servidores ni contratar personal de infraestructura.</p>
+        <p><strong>2. Créditos GCP:</strong> $300 por 90 días permiten desarrollar y probar sin costos.</p>
+        <p><strong>3. Servicios administrados:</strong> Cloud SQL, GKE, Load Balancer reducen la carga operativa.</p>
+        <p><strong>4. Escalabilidad automática:</strong> El sistema crece según la demanda sin intervención manual.</p>

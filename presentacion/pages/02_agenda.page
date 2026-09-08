@@ -1,0 +1,91 @@
+pageType: content
+background:
+  type: solid
+  color: "#ffffff"
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds: [0, 0, 960, 50]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: header-title
+    elementType: text
+    bounds: [30, 0, 400, 50]
+    content:
+      color: "#ffffff"
+      fontSize: 20
+      bold: true
+      align: [left, middle]
+      text: Agenda
+  - elementId: item1-num
+    elementType: shape
+    bounds: [80, 100, 50, 50]
+    shapeName: ellipse
+    fill: {type: solid, color: "$primary"}
+  - elementId: item1-text
+    elementType: text
+    bounds: [145, 100, 300, 50]
+    content:
+      fontSize: 18
+      align: [left, middle]
+      text: "1. Descripción de la organización"
+  - elementId: item2-num
+    elementType: shape
+    bounds: [80, 170, 50, 50]
+    shapeName: ellipse
+    fill: {type: solid, color: "$primary"}
+  - elementId: item2-text
+    elementType: text
+    bounds: [145, 170, 300, 50]
+    content:
+      fontSize: 18
+      align: [left, middle]
+      text: "2. Identificación del problema"
+  - elementId: item3-num
+    elementType: shape
+    bounds: [80, 240, 50, 50]
+    shapeName: ellipse
+    fill: {type: solid, color: "$primary"}
+  - elementId: item3-text
+    elementType: text
+    bounds: [145, 240, 300, 50]
+    content:
+      fontSize: 18
+      align: [left, middle]
+      text: "3. Requerimientos"
+  - elementId: item4-num
+    elementType: shape
+    bounds: [80, 310, 50, 50]
+    shapeName: ellipse
+    fill: {type: solid, color: "$primary"}
+  - elementId: item4-text
+    elementType: text
+    bounds: [145, 310, 350, 50]
+    content:
+      fontSize: 18
+      align: [left, middle]
+      text: "4. Selección del modelo cloud + GCP vs AWS"
+  - elementId: item5-num
+    elementType: shape
+    bounds: [80, 380, 50, 50]
+    shapeName: ellipse
+    fill: {type: solid, color: "$primary"}
+  - elementId: item5-text
+    elementType: text
+    bounds: [145, 380, 300, 50]
+    content:
+      fontSize: 18
+      align: [left, middle]
+      text: "5. Mostrar la solución"
+  - elementId: item6-num
+    elementType: shape
+    bounds: [80, 450, 50, 50]
+    shapeName: ellipse
+    fill: {type: solid, color: "$secondary"}
+  - elementId: item6-text
+    elementType: text
+    bounds: [145, 450, 300, 50]
+    content:
+      fontSize: 18
+      align: [left, middle]
+      text: "6. Conclusiones"

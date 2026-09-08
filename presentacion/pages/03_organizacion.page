@@ -1,0 +1,132 @@
+pageType: content
+background:
+  type: solid
+  color: "#ffffff"
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds: [0, 0, 960, 50]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: header-title
+    elementType: text
+    bounds: [30, 0, 500, 50]
+    content:
+      color: "#ffffff"
+      fontSize: 20
+      bold: true
+      align: [left, middle]
+      text: "1. Descripción de la organización"
+  - elementId: card1-bg
+    elementType: shape
+    bounds: [50, 80, 420, 100]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+    border: {style: solid, width: 1, color: "#dadce0"}
+  - elementId: card1-icon
+    elementType: icon
+    bounds: [70, 105, 40, 40]
+    iconName: "fas:building"
+    fill: {type: solid, color: "$primary"}
+  - elementId: card1-text
+    elementType: text
+    bounds: [125, 85, 330, 90]
+    content:
+      fontSize: 14
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p><strong>Nombre:</strong></p>
+        <p>Biblioteca Oasis - UTP</p>
+  - elementId: card2-bg
+    elementType: shape
+    bounds: [490, 80, 420, 100]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+    border: {style: solid, width: 1, color: "#dadce0"}
+  - elementId: card2-icon
+    elementType: icon
+    bounds: [510, 105, 40, 40]
+    iconName: "fas:industry"
+    fill: {type: solid, color: "$secondary"}
+  - elementId: card2-text
+    elementType: text
+    bounds: [565, 85, 330, 90]
+    content:
+      fontSize: 14
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p><strong>Sector:</strong></p>
+        <p>Educativo / Gestión del conocimiento</p>
+  - elementId: card3-bg
+    elementType: shape
+    bounds: [50, 200, 420, 100]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+    border: {style: solid, width: 1, color: "#dadce0"}
+  - elementId: card3-icon
+    elementType: icon
+    bounds: [70, 225, 40, 40]
+    iconName: "fas:users"
+    fill: {type: solid, color: "$accent"}
+  - elementId: card3-text
+    elementType: text
+    bounds: [125, 205, 330, 90]
+    content:
+      fontSize: 14
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p><strong>Usuarios:</strong></p>
+        <p>~500 activos (estudiantes, bibliotecarios, admins)</p>
+  - elementId: card4-bg
+    elementType: shape
+    bounds: [490, 200, 420, 100]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+    border: {style: solid, width: 1, color: "#dadce0"}
+  - elementId: card4-icon
+    elementType: icon
+    bounds: [510, 225, 40, 40]
+    iconName: "fas:book"
+    fill: {type: solid, color: "$danger"}
+  - elementId: card4-text
+    elementType: text
+    bounds: [565, 205, 330, 90]
+    content:
+      fontSize: 14
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p><strong>Servicios:</strong></p>
+        <p>Catálogo, préstamos, inventario, ventas, reportes</p>
+  - elementId: servicios-title
+    elementType: text
+    bounds: [50, 330, 860, 30]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$primary"
+      align: [left, middle]
+      text: "Servicios principales del sistema:"
+  - elementId: servicios-list
+    elementType: text
+    bounds: [50, 370, 860, 150]
+    content:
+      fontSize: 14
+      lineHeight: 1.6
+      align: [left, top]
+      text: |
+        <ul>
+        <li>Gestión de catálogo de libros (autores, editoriales, materias)</li>
+        <li>Préstamos y devoluciones con control de fechas y estados</li>
+        <li>Control de inventario con alertas de stock mínimo</li>
+        <li>Reportes y auditoría de movimientos</li>
+        <li>Gestión de usuarios con roles diferenciados</li>
+        <li>Ventas de material bibliográfico</li>
+        </ul>

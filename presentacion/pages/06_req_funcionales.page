@@ -1,0 +1,50 @@
+pageType: content
+background:
+  type: solid
+  color: "#ffffff"
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds: [0, 0, 960, 50]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: header-title
+    elementType: text
+    bounds: [30, 0, 500, 50]
+    content:
+      color: "#ffffff"
+      fontSize: 20
+      bold: true
+      align: [left, middle]
+      text: "3. Requerimientos funcionales"
+  - elementId: req-table
+    elementType: table
+    bounds: [50, 80, 860, 420]
+    columnWidths: [0.08, 0.52, 0.40]
+    rowHeights: [0.1, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15]
+    style: "$default"
+    rows:
+      - - text: "#"
+        - text: "Requerimiento"
+        - text: "Descripción"
+      - - text: "1"
+        - text: "Gestión de usuarios"
+        - text: "Registro, JWT, roles (admin, bibliotecario, estudiante)"
+      - - text: "2"
+        - text: "Catálogo de libros"
+        - text: "CRUD con filtros por autor, editorial, materia"
+      - - text: "3"
+        - text: "Préstamos y devoluciones"
+        - text: "Control de fechas y estados (activo, devuelto, retrasado)"
+      - - text: "4"
+        - text: "Control de inventario"
+        - text: "Alertas automáticas de stock mínimo"
+      - - text: "5"
+        - text: "Reportes y auditoría"
+        - text: "Movimientos: préstamos, devoluciones, ventas, ajustes"
+      - - text: "6"
+        - text: "Ventas"
+        - text: "Venta de material bibliográfico con detalle"
+      - - text: "7"
+        - text: "Subida de archivos"
+        - text: "Portadas de libros y PDFs a Cloud Storage"

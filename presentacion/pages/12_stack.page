@@ -1,0 +1,213 @@
+pageType: content
+background:
+  type: solid
+  color: "#ffffff"
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds: [0, 0, 960, 50]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: header-title
+    elementType: text
+    bounds: [30, 0, 500, 50]
+    content:
+      color: "#ffffff"
+      fontSize: 20
+      bold: true
+      align: [left, middle]
+      text: "5.1 Stack tecnológico completo"
+  - elementId: frontend-box
+    elementType: shape
+    bounds: [50, 80, 270, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e8f0fe"}
+    border: {style: solid, width: 2, color: "$primary"}
+  - elementId: frontend-icon
+    elementType: icon
+    bounds: [155, 95, 40, 40]
+    iconName: "fab:angular"
+    fill: {type: solid, color: "$danger"}
+  - elementId: frontend-title
+    elementType: text
+    bounds: [60, 142, 250, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$primary"
+      align: [center, middle]
+      text: "Frontend"
+  - elementId: frontend-text
+    elementType: text
+    bounds: [60, 170, 250, 80]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p>Angular 17+</p>
+        <p>TypeScript</p>
+        <p>HTML5 / CSS3</p>
+  - elementId: backend-box
+    elementType: shape
+    bounds: [340, 80, 270, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e6f4ea"}
+    border: {style: solid, width: 2, color: "$secondary"}
+  - elementId: backend-icon
+    elementType: icon
+    bounds: [445, 95, 40, 40]
+    iconName: "fas:leaf"
+    fill: {type: solid, color: "$secondary"}
+  - elementId: backend-title
+    elementType: text
+    bounds: [350, 142, 250, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$secondary"
+      align: [center, middle]
+      text: "Backend"
+  - elementId: backend-text
+    elementType: text
+    bounds: [350, 170, 250, 80]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p>Spring Boot 3.2</p>
+        <p>Java 17</p>
+        <p>JPA / Hibernate</p>
+        <p>Maven</p>
+  - elementId: db-box
+    elementType: shape
+    bounds: [630, 80, 280, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#fff3e0"}
+    border: {style: solid, width: 2, color: "#f57c00"}
+  - elementId: db-icon
+    elementType: icon
+    bounds: [740, 95, 40, 40]
+    iconName: "fas:database"
+    fill: {type: solid, color: "#f57c00"}
+  - elementId: db-title
+    elementType: text
+    bounds: [640, 142, 260, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#f57c00"
+      align: [center, middle]
+      text: "Base de Datos"
+  - elementId: db-text
+    elementType: text
+    bounds: [640, 170, 260, 80]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p>Cloud SQL</p>
+        <p>MySQL 8.0</p>
+  - elementId: cloud-box
+    elementType: shape
+    bounds: [50, 280, 270, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#fce8e6"}
+    border: {style: solid, width: 2, color: "$danger"}
+  - elementId: cloud-icon
+    elementType: icon
+    bounds: [155, 295, 40, 40]
+    iconName: "fas:cloud"
+    fill: {type: solid, color: "$danger"}
+  - elementId: cloud-title
+    elementType: text
+    bounds: [60, 342, 250, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$danger"
+      align: [center, middle]
+      text: "Cloud GCP"
+  - elementId: cloud-text
+    elementType: text
+    bounds: [60, 370, 250, 80]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p>Compute Engine</p>
+        <p>Cloud SQL</p>
+        <p>GKE</p>
+        <p>Cloud Storage</p>
+  - elementId: security-box
+    elementType: shape
+    bounds: [340, 280, 270, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#f3e8fd"}
+    border: {style: solid, width: 2, color: "#9334e6"}
+  - elementId: security-icon
+    elementType: icon
+    bounds: [445, 295, 40, 40]
+    iconName: "fas:shield-halved"
+    fill: {type: solid, color: "#9334e6"}
+  - elementId: security-title
+    elementType: text
+    bounds: [350, 342, 250, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#9334e6"
+      align: [center, middle]
+      text: "Seguridad"
+  - elementId: security-text
+    elementType: text
+    bounds: [350, 370, 250, 80]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p>JWT</p>
+        <p>BCrypt</p>
+        <p>Spring Security</p>
+        <p>HTTPS</p>
+  - elementId: devops-box
+    elementType: shape
+    bounds: [630, 280, 280, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e0f7fa"}
+    border: {style: solid, width: 2, color: "#0097a7"}
+  - elementId: devops-icon
+    elementType: icon
+    bounds: [740, 295, 40, 40]
+    iconName: "fas:docker"
+    fill: {type: solid, color: "#0097a7"}
+  - elementId: devops-title
+    elementType: text
+    bounds: [640, 342, 260, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#0097a7"
+      align: [center, middle]
+      text: "DevOps"
+  - elementId: devops-text
+    elementType: text
+    bounds: [640, 370, 260, 80]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p>Docker</p>
+        <p>Kubernetes (GKE)</p>
+        <p>Load Balancer</p>

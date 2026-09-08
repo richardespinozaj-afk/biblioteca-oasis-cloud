@@ -1,0 +1,225 @@
+pageType: content
+background:
+  type: solid
+  color: "#ffffff"
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds: [0, 0, 960, 50]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: header-title
+    elementType: text
+    bounds: [30, 0, 500, 50]
+    content:
+      color: "#ffffff"
+      fontSize: 20
+      bold: true
+      align: [left, middle]
+      text: "5. Mostrar la solución - Arquitectura 4 Capas"
+  - elementId: capa1-box
+    elementType: shape
+    bounds: [50, 80, 200, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e8f0fe"}
+    border: {style: solid, width: 2, color: "$primary"}
+  - elementId: capa1-num
+    elementType: shape
+    bounds: [130, 90, 30, 30]
+    shapeName: ellipse
+    fill: {type: solid, color: "$primary"}
+  - elementId: capa1-numtext
+    elementType: text
+    bounds: [130, 90, 30, 30]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#ffffff"
+      align: [center, middle]
+      text: "1"
+  - elementId: capa1-title
+    elementType: text
+    bounds: [60, 128, 180, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$primary"
+      align: [center, middle]
+      text: "Presentación"
+  - elementId: capa1-text
+    elementType: text
+    bounds: [60, 158, 180, 90]
+    content:
+      fontSize: 11
+      lineHeight: 1.3
+      align: [center, top]
+      text: |
+        <p>Angular 17+</p>
+        <p>TypeScript</p>
+        <p>HTML/CSS</p>
+        <p>PWA</p>
+  - elementId: capa2-box
+    elementType: shape
+    bounds: [270, 80, 200, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e6f4ea"}
+    border: {style: solid, width: 2, color: "$secondary"}
+  - elementId: capa2-num
+    elementType: shape
+    bounds: [350, 90, 30, 30]
+    shapeName: ellipse
+    fill: {type: solid, color: "$secondary"}
+  - elementId: capa2-numtext
+    elementType: text
+    bounds: [350, 90, 30, 30]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#ffffff"
+      align: [center, middle]
+      text: "2"
+  - elementId: capa2-title
+    elementType: text
+    bounds: [280, 128, 180, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$secondary"
+      align: [center, middle]
+      text: "Aplicación"
+  - elementId: capa2-text
+    elementType: text
+    bounds: [280, 158, 180, 90]
+    content:
+      fontSize: 11
+      lineHeight: 1.3
+      align: [center, top]
+      text: |
+        <p>Spring Boot 3.2</p>
+        <p>Java 17</p>
+        <p>JPA/Hibernate</p>
+        <p>JWT + BCrypt</p>
+  - elementId: capa3-box
+    elementType: shape
+    bounds: [490, 80, 200, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#fff3e0"}
+    border: {style: solid, width: 2, color: "#f57c00"}
+  - elementId: capa3-num
+    elementType: shape
+    bounds: [570, 90, 30, 30]
+    shapeName: ellipse
+    fill: {type: solid, color: "#f57c00"}
+  - elementId: capa3-numtext
+    elementType: text
+    bounds: [570, 90, 30, 30]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#ffffff"
+      align: [center, middle]
+      text: "3"
+  - elementId: capa3-title
+    elementType: text
+    bounds: [500, 128, 180, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#f57c00"
+      align: [center, middle]
+      text: "Datos"
+  - elementId: capa3-text
+    elementType: text
+    bounds: [500, 158, 180, 90]
+    content:
+      fontSize: 11
+      lineHeight: 1.3
+      align: [center, top]
+      text: |
+        <p>Cloud SQL</p>
+        <p>MySQL 8.0</p>
+        <p>Backups auto</p>
+        <p>Alta disponibilidad</p>
+  - elementId: capa4-box
+    elementType: shape
+    bounds: [710, 80, 200, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#fce8e6"}
+    border: {style: solid, width: 2, color: "$danger"}
+  - elementId: capa4-num
+    elementType: shape
+    bounds: [790, 90, 30, 30]
+    shapeName: ellipse
+    fill: {type: solid, color: "$danger"}
+  - elementId: capa4-numtext
+    elementType: text
+    bounds: [790, 90, 30, 30]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#ffffff"
+      align: [center, middle]
+      text: "4"
+  - elementId: capa4-title
+    elementType: text
+    bounds: [720, 128, 180, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$danger"
+      align: [center, middle]
+      text: "Infraestructura"
+  - elementId: capa4-text
+    elementType: text
+    bounds: [720, 158, 180, 90]
+    content:
+      fontSize: 11
+      lineHeight: 1.3
+      align: [center, top]
+      text: |
+        <p>VPC + Firewall</p>
+        <p>IAM + Load Balancer</p>
+        <p>Cloud Monitoring</p>
+        <p>Cloud Logging</p>
+  - elementId: arrow1
+    elementType: icon
+    bounds: [252, 155, 16, 16]
+    iconName: "fas:arrow-right"
+    fill: {type: solid, color: "#9e9e9e"}
+  - elementId: arrow2
+    elementType: icon
+    bounds: [472, 155, 16, 16]
+    iconName: "fas:arrow-right"
+    fill: {type: solid, color: "#9e9e9e"}
+  - elementId: arrow3
+    elementType: icon
+    bounds: [692, 155, 16, 16]
+    iconName: "fas:arrow-right"
+    fill: {type: solid, color: "#9e9e9e"}
+  - elementId: user-icon
+    elementType: icon
+    bounds: [110, 280, 40, 40]
+    iconName: "fas:user"
+    fill: {type: solid, color: "$primary"}
+  - elementId: user-text
+    elementType: text
+    bounds: [70, 325, 120, 30]
+    content:
+      fontSize: 11
+      align: [center, middle]
+      text: "Usuario"
+  - elementId: flow-text
+    elementType: text
+    bounds: [50, 370, 860, 140]
+    content:
+      fontSize: 13
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p><strong>Flujo didáctico:</strong> El usuario ingresa por el frontend Angular → el backend Spring Boot procesa la petición con JWT → Cloud SQL guarda los datos → la infraestructura GCP asegura todo.</p>
+        <p><strong>PC2:</strong> Todo en Compute Engine (IaaS) | <strong>PC3:</strong> Backend y Frontend en contenedores GKE (PaaS)</p>
+        <p><strong>Seguridad:</strong> HTTPS + Firewall + IAM + RBAC en cada capa.</p>

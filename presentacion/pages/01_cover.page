@@ -1,0 +1,61 @@
+pageType: cover
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "#1a73e8"}
+    - {position: 1, color: "#0d47a1"}
+elements:
+  - elementId: logo
+    elementType: icon
+    bounds: [430, 60, 100, 100]
+    iconName: "fas:cloud"
+    fill: {type: solid, color: "#ffffff"}
+  - elementId: title
+    elementType: text
+    bounds: [80, 180, 800, 60]
+    content:
+      style: "$title"
+      color: "#ffffff"
+      fontSize: 38
+      align: [center, middle]
+      text: Biblioteca Oasis
+  - elementId: subtitle
+    elementType: text
+    bounds: [80, 250, 800, 40]
+    content:
+      style: "$subtitle"
+      color: "#e8f0fe"
+      fontSize: 20
+      align: [center, middle]
+      text: "Diseño de una Solución Cloud Empresarial"
+  - elementId: course
+    elementType: text
+    bounds: [80, 310, 800, 30]
+    content:
+      style: "$caption"
+      color: "#e8f0fe"
+      fontSize: 16
+      align: [center, middle]
+      text: "Integración de Servicios Cloud GCP - UTP 2026-II"
+  - elementId: team
+    elementType: text
+    bounds: [80, 380, 800, 80]
+    content:
+      style: "$body"
+      color: "#e8f0fe"
+      fontSize: 14
+      align: [center, middle]
+      text: |
+        <p>[Integrante 1] | [Integrante 2] | [Integrante 3]</p>
+        <p>[Integrante 4] | [Integrante 5]</p>
+  - elementId: docente
+    elementType: text
+    bounds: [80, 470, 800, 30]
+    content:
+      style: "$caption"
+      color: "#e8f0fe"
+      fontSize: 12
+      align: [center, middle]
+      text: "Docente: MSc. Henríquez Taboada, Héctor Hernán"

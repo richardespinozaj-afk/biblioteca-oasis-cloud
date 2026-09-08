@@ -1,0 +1,181 @@
+pageType: content
+background:
+  type: solid
+  color: "#ffffff"
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds: [0, 0, 960, 50]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: header-title
+    elementType: text
+    bounds: [30, 0, 500, 50]
+    content:
+      color: "#ffffff"
+      fontSize: 20
+      bold: true
+      align: [left, middle]
+      text: "4.2 Selección del modelo de servicio"
+  - elementId: iaas-box
+    elementType: shape
+    bounds: [50, 80, 280, 200]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e8f0fe"}
+    border: {style: solid, width: 2, color: "$primary"}
+  - elementId: iaas-icon
+    elementType: icon
+    bounds: [155, 100, 50, 50]
+    iconName: "fas:server"
+    fill: {type: solid, color: "$primary"}
+  - elementId: iaas-title
+    elementType: text
+    bounds: [60, 160, 260, 25]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$primary"
+      align: [center, middle]
+      text: "IaaS - Avance 2"
+  - elementId: iaas-text
+    elementType: text
+    bounds: [60, 190, 260, 80]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p>Compute Engine (VM Ubuntu)</p>
+        <p>Backend + Frontend en VM</p>
+        <p>Firewall, VPC, IP estática</p>
+  - elementId: paas-box
+    elementType: shape
+    bounds: [350, 80, 280, 200]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e6f4ea"}
+    border: {style: solid, width: 2, color: "$secondary"}
+  - elementId: paas-icon
+    elementType: icon
+    bounds: [455, 100, 50, 50]
+    iconName: "fas:boxes-stacked"
+    fill: {type: solid, color: "$secondary"}
+  - elementId: paas-title
+    elementType: text
+    bounds: [360, 160, 260, 25]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$secondary"
+      align: [center, middle]
+      text: "PaaS - Avance 3"
+  - elementId: paas-text
+    elementType: text
+    bounds: [360, 190, 260, 80]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p>GKE (Kubernetes)</p>
+        <p>Cloud SQL (MySQL)</p>
+        <p>Cloud Storage</p>
+  - elementId: saas-box
+    elementType: shape
+    bounds: [650, 80, 260, 200]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#fff3e0"}
+    border: {style: solid, width: 1, color: "#dadce0"}
+  - elementId: saas-icon
+    elementType: icon
+    bounds: [745, 100, 50, 50]
+    iconName: "fas:chart-line"
+    fill: {type: solid, color: "#f57c00"}
+  - elementId: saas-title
+    elementType: text
+    bounds: [660, 160, 240, 25]
+    content:
+      fontSize: 16
+      bold: true
+      color: "#f57c00"
+      align: [center, middle]
+      text: "SaaS"
+  - elementId: saas-text
+    elementType: text
+    bounds: [660, 190, 240, 80]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p>Cloud Monitoring</p>
+        <p>Cloud Logging</p>
+        <p>Cloud Scheduler</p>
+  - elementId: avance-title
+    elementType: text
+    bounds: [50, 310, 860, 30]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$primary"
+      align: [left, middle]
+      text: "Evolución por avances:"
+  - elementId: timeline-line
+    elementType: line
+    bounds: [100, 370, 760, 20]
+    viewBox: [1, 1]
+    points: "0,0.5 1,0.5"
+    border: {style: solid, width: 3, color: "$primary"}
+  - elementId: dot1
+    elementType: shape
+    bounds: [100, 360, 20, 20]
+    shapeName: ellipse
+    fill: {type: solid, color: "$primary"}
+  - elementId: dot2
+    elementType: shape
+    bounds: [380, 360, 20, 20]
+    shapeName: ellipse
+    fill: {type: solid, color: "$secondary"}
+  - elementId: dot3
+    elementType: shape
+    bounds: [660, 360, 20, 20]
+    shapeName: ellipse
+    fill: {type: solid, color: "#f57c00"}
+  - elementId: label1
+    elementType: text
+    bounds: [50, 390, 200, 50]
+    content:
+      fontSize: 12
+      align: [center, top]
+      text: |
+        <p><strong>PC2 (Sem 6-10)</strong></p>
+        <p>IaaS con VM</p>
+  - elementId: label2
+    elementType: text
+    bounds: [330, 390, 200, 50]
+    content:
+      fontSize: 12
+      align: [center, top]
+      text: |
+        <p><strong>PC3 (Sem 13-15)</strong></p>
+        <p>PaaS con GKE</p>
+  - elementId: label3
+    elementType: text
+    bounds: [610, 390, 200, 50]
+    content:
+      fontSize: 12
+      align: [center, top]
+      text: |
+        <p><strong>EXFN (Sem 16-18)</strong></p>
+        <p>Monitoreo + Pruebas</p>
+  - elementId: nota
+    elementType: text
+    bounds: [50, 460, 860, 50]
+    content:
+      fontSize: 13
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p><strong>Estrategia híbrida de servicios:</strong> IaaS para aprender configuración de infraestructura + PaaS para despliegue profesional con contenedores.</p>

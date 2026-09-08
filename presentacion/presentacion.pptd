@@ -1,0 +1,54 @@
+version: v2
+title: Biblioteca Oasis - Integración de Servicios Cloud GCP
+size: [960, 540]
+theme:
+  colors:
+    primary: "#1a73e8"
+    secondary: "#34a853"
+    accent: "#fbbc04"
+    danger: "#ea4335"
+    text: "#202124"
+    light: "#f8f9fa"
+    dark: "#1a73e8"
+  textStyles:
+    title:
+      fontSize: 36
+      color: "$primary"
+      bold: true
+    subtitle:
+      fontSize: 22
+      color: "$text"
+    body:
+      fontSize: 16
+      color: "$text"
+      lineHeight: 1.5
+    caption:
+      fontSize: 14
+      color: "#5f6368"
+  tableStyles:
+    default:
+      cellStyle:
+        align: [left, middle]
+        fontSize: 14
+      firstRowStyle:
+        fill: {type: solid, color: "$primary"}
+        color: "#ffffff"
+        bold: true
+      bodyStyles:
+        - {fill: {type: solid, color: "#f8f9fa"}}
+        - {fill: {type: solid, color: "#ffffff"}}
+pages:
+  - pages/01_cover.page
+  - pages/02_agenda.page
+  - pages/03_organizacion.page
+  - pages/04_problema.page
+  - pages/05_limitaciones.page
+  - pages/06_req_funcionales.page
+  - pages/07_req_nofuncionales.page
+  - pages/08_modelo_cloud.page
+  - pages/09_gcp_vs_aws.page
+  - pages/10_modelo_servicio.page
+  - pages/11_arquitectura.page
+  - pages/12_stack.page
+  - pages/13_conclusiones.page
+  - pages/14_gracias.page

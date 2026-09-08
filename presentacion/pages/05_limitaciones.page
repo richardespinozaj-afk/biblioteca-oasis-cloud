@@ -1,0 +1,151 @@
+pageType: content
+background:
+  type: solid
+  color: "#ffffff"
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds: [0, 0, 960, 50]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: header-title
+    elementType: text
+    bounds: [30, 0, 500, 50]
+    content:
+      color: "#ffffff"
+      fontSize: 20
+      bold: true
+      align: [left, middle]
+      text: "2. Limitaciones tecnológicas"
+  - elementId: limit1-bg
+    elementType: shape
+    bounds: [50, 80, 280, 200]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#fff3e0"}
+    border: {style: solid, width: 1, color: "#dadce0"}
+  - elementId: limit1-icon
+    elementType: icon
+    bounds: [160, 100, 40, 40]
+    iconName: "fas:code"
+    fill: {type: solid, color: "#f57c00"}
+  - elementId: limit1-text
+    elementType: text
+    bounds: [65, 150, 250, 120]
+    content:
+      fontSize: 13
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p><strong>Arquitectura monolítica</strong></p>
+        <p>Sin API REST ni separación de capas</p>
+  - elementId: limit2-bg
+    elementType: shape
+    bounds: [350, 80, 280, 200]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#fce8e6"}
+    border: {style: solid, width: 1, color: "#dadce0"}
+  - elementId: limit2-icon
+    elementType: icon
+    bounds: [460, 100, 40, 40]
+    iconName: "fas:lock-open"
+    fill: {type: solid, color: "$danger"}
+  - elementId: limit2-text
+    elementType: text
+    bounds: [365, 150, 250, 120]
+    content:
+      fontSize: 13
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p><strong>Seguridad débil</strong></p>
+        <p>Contraseñas en texto plano, sin JWT</p>
+  - elementId: limit3-bg
+    elementType: shape
+    bounds: [650, 80, 280, 200]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e8f0fe"}
+    border: {style: solid, width: 1, color: "#dadce0"}
+  - elementId: limit3-icon
+    elementType: icon
+    bounds: [760, 100, 40, 40]
+    iconName: "fas:chart-line"
+    fill: {type: solid, color: "$primary"}
+  - elementId: limit3-text
+    elementType: text
+    bounds: [665, 150, 250, 120]
+    content:
+      fontSize: 13
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p><strong>Sin escalabilidad</strong></p>
+        <p>No crece ante más usuarios o transacciones</p>
+  - elementId: limit4-bg
+    elementType: shape
+    bounds: [50, 300, 280, 200]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e6f4ea"}
+    border: {style: solid, width: 1, color: "#dadce0"}
+  - elementId: limit4-icon
+    elementType: icon
+    bounds: [160, 320, 40, 40]
+    iconName: "fas:docker"
+    fill: {type: solid, color: "$secondary"}
+  - elementId: limit4-text
+    elementType: text
+    bounds: [65, 370, 250, 120]
+    content:
+      fontSize: 13
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p><strong>Sin contenedores</strong></p>
+        <p>No hay Docker ni CI/CD para despliegues</p>
+  - elementId: limit5-bg
+    elementType: shape
+    bounds: [350, 300, 280, 200]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#f3e8fd"}
+    border: {style: solid, width: 1, color: "#dadce0"}
+  - elementId: limit5-icon
+    elementType: icon
+    bounds: [460, 320, 40, 40]
+    iconName: "fas:bell-slash"
+    fill: {type: solid, color: "#9334e6"}
+  - elementId: limit5-text
+    elementType: text
+    bounds: [365, 370, 250, 120]
+    content:
+      fontSize: 13
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p><strong>Sin monitoreo</strong></p>
+        <p>No hay logs, alertas ni Cloud Monitoring</p>
+  - elementId: limit6-bg
+    elementType: shape
+    bounds: [650, 300, 280, 200]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e0f7fa"}
+    border: {style: solid, width: 1, color: "#dadce0"}
+  - elementId: limit6-icon
+    elementType: icon
+    bounds: [760, 320, 40, 40]
+    iconName: "fas:globe-slash"
+    fill: {type: solid, color: "#0097a7"}
+  - elementId: limit6-text
+    elementType: text
+    bounds: [665, 370, 250, 120]
+    content:
+      fontSize: 13
+      lineHeight: 1.4
+      align: [center, top]
+      text: |
+        <p><strong>Acceso local</strong></p>
+        <p>Solo funciona dentro del campus</p>

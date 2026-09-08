@@ -1,0 +1,213 @@
+pageType: content
+background:
+  type: solid
+  color: "#ffffff"
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds: [0, 0, 960, 50]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: header-title
+    elementType: text
+    bounds: [30, 0, 500, 50]
+    content:
+      color: "#ffffff"
+      fontSize: 20
+      bold: true
+      align: [left, middle]
+      text: "6. Conclusiones"
+  - elementId: c1-bg
+    elementType: shape
+    bounds: [50, 80, 420, 70]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e8f0fe"}
+  - elementId: c1-num
+    elementType: shape
+    bounds: [60, 90, 30, 30]
+    shapeName: ellipse
+    fill: {type: solid, color: "$primary"}
+  - elementId: c1-numtext
+    elementType: text
+    bounds: [60, 90, 30, 30]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#ffffff"
+      align: [center, middle]
+      text: "1"
+  - elementId: c1-text
+    elementType: text
+    bounds: [100, 85, 360, 55]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p>La organización requiere modernización tecnológica urgente debido a las limitaciones del sistema legacy.</p>
+  - elementId: c2-bg
+    elementType: shape
+    bounds: [490, 80, 420, 70]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e6f4ea"}
+  - elementId: c2-num
+    elementType: shape
+    bounds: [500, 90, 30, 30]
+    shapeName: ellipse
+    fill: {type: solid, color: "$secondary"}
+  - elementId: c2-numtext
+    elementType: text
+    bounds: [500, 90, 30, 30]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#ffffff"
+      align: [center, middle]
+      text: "2"
+  - elementId: c2-text
+    elementType: text
+    bounds: [540, 85, 360, 55]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p>Los requerimientos cubren todas las operaciones bibliotecarias con altos estándares de seguridad.</p>
+  - elementId: c3-bg
+    elementType: shape
+    bounds: [50, 165, 420, 70]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#fff3e0"}
+  - elementId: c3-num
+    elementType: shape
+    bounds: [60, 175, 30, 30]
+    shapeName: ellipse
+    fill: {type: solid, color: "#f57c00"}
+  - elementId: c3-numtext
+    elementType: text
+    bounds: [60, 175, 30, 30]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#ffffff"
+      align: [center, middle]
+      text: "3"
+  - elementId: c3-text
+    elementType: text
+    bounds: [100, 170, 360, 55]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p>La nube pública elimina inversión en infraestructura física y permite aprovechar créditos GCP.</p>
+  - elementId: c4-bg
+    elementType: shape
+    bounds: [490, 165, 420, 70]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#fce8e6"}
+  - elementId: c4-num
+    elementType: shape
+    bounds: [500, 175, 30, 30]
+    shapeName: ellipse
+    fill: {type: solid, color: "$danger"}
+  - elementId: c4-numtext
+    elementType: text
+    bounds: [500, 175, 30, 30]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#ffffff"
+      align: [center, middle]
+      text: "4"
+  - elementId: c4-text
+    elementType: text
+    bounds: [540, 170, 360, 55]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p>IaaS + PaaS permite una migración progresiva y didáctica durante los avances del curso.</p>
+  - elementId: c5-bg
+    elementType: shape
+    bounds: [50, 250, 420, 70]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#f3e8fd"}
+  - elementId: c5-num
+    elementType: shape
+    bounds: [60, 260, 30, 30]
+    shapeName: ellipse
+    fill: {type: solid, color: "#9334e6"}
+  - elementId: c5-numtext
+    elementType: text
+    bounds: [60, 260, 30, 30]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#ffffff"
+      align: [center, middle]
+      text: "5"
+  - elementId: c5-text
+    elementType: text
+    bounds: [100, 255, 360, 55]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p>GCP es la elección óptima frente a AWS por créditos, alineación curricular y superioridad de GKE.</p>
+  - elementId: c6-bg
+    elementType: shape
+    bounds: [490, 250, 420, 70]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e0f7fa"}
+  - elementId: c6-num
+    elementType: shape
+    bounds: [500, 260, 30, 30]
+    shapeName: ellipse
+    fill: {type: solid, color: "#0097a7"}
+  - elementId: c6-numtext
+    elementType: text
+    bounds: [500, 260, 30, 30]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#ffffff"
+      align: [center, middle]
+      text: "6"
+  - elementId: c6-text
+    elementType: text
+    bounds: [540, 255, 360, 55]
+    content:
+      fontSize: 12
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p>El prototipo de 4 capas establece una hoja de ruta clara desde el desarrollo hasta producción.</p>
+  - elementId: resumen-title
+    elementType: text
+    bounds: [50, 350, 860, 30]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$primary"
+      align: [center, middle]
+      text: "Resumen"
+  - elementId: resumen-text
+    elementType: text
+    bounds: [50, 390, 860, 110]
+    content:
+      fontSize: 14
+      lineHeight: 1.5
+      align: [center, top]
+      text: |
+        <p>El proyecto "Biblioteca Oasis" transformará un sistema obsoleto en una <strong>solución cloud moderna, segura y escalable</strong></p>
+        <p>usando <strong>Spring Boot, Angular y Google Cloud Platform</strong>, demostrando competencias en</p>
+        <p>arquitectura de 4 capas, contenedores y servicios cloud empresariales.</p>

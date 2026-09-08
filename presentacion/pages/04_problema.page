@@ -1,0 +1,119 @@
+pageType: content
+background:
+  type: solid
+  color: "#ffffff"
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds: [0, 0, 960, 50]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: header-title
+    elementType: text
+    bounds: [30, 0, 500, 50]
+    content:
+      color: "#ffffff"
+      fontSize: 20
+      bold: true
+      align: [left, middle]
+      text: "2. Identificación del problema"
+  - elementId: section-title
+    elementType: text
+    bounds: [50, 70, 400, 30]
+    content:
+      fontSize: 18
+      bold: true
+      color: "$primary"
+      align: [left, middle]
+      text: "Situación actual"
+  - elementId: antes-box
+    elementType: shape
+    bounds: [50, 110, 430, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#fce8e6"}
+    border: {style: solid, width: 2, color: "$danger"}
+  - elementId: antes-title
+    elementType: text
+    bounds: [70, 120, 390, 30]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$danger"
+      align: [left, middle]
+      text: "ANTES - Sistema Legacy"
+  - elementId: antes-text
+    elementType: text
+    bounds: [70, 155, 390, 120]
+    content:
+      fontSize: 13
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <ul>
+        <li>PHP puro, arquitectura monolítica</li>
+        <li>Servidor local, acceso solo en campus</li>
+        <li>Contraseñas en texto plano</li>
+        <li>Sin API REST ni documentación</li>
+        <li>Sin backups automáticos</li>
+        </ul>
+  - elementId: flecha
+    elementType: icon
+    bounds: [500, 180, 40, 40]
+    iconName: "fas:arrow-right"
+    fill: {type: solid, color: "$primary"}
+  - elementId: despues-box
+    elementType: shape
+    bounds: [560, 110, 370, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e6f4ea"}
+    border: {style: solid, width: 2, color: "$secondary"}
+  - elementId: despues-title
+    elementType: text
+    bounds: [580, 120, 330, 30]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$secondary"
+      align: [left, middle]
+      text: "DESPUÉS - Cloud GCP"
+  - elementId: despues-text
+    elementType: text
+    bounds: [580, 155, 330, 120]
+    content:
+      fontSize: 13
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <ul>
+        <li>Spring Boot + Angular</li>
+        <li>Acceso 24/7 desde cualquier lugar</li>
+        <li>JWT + BCrypt (seguridad)</li>
+        <li>API REST documentada</li>
+        <li>Backups automáticos en Cloud Storage</li>
+        </ul>
+  - elementId: riesgos-title
+    elementType: text
+    bounds: [50, 310, 400, 30]
+    content:
+      fontSize: 18
+      bold: true
+      color: "$danger"
+      align: [left, middle]
+      text: "Riesgos identificados"
+  - elementId: riesgos-text
+    elementType: text
+    bounds: [50, 350, 860, 170]
+    content:
+      fontSize: 14
+      lineHeight: 1.6
+      align: [left, top]
+      text: |
+        <ul>
+        <li><strong>Pérdida de datos:</strong> Fallos de hardware sin backups automatizados</li>
+        <li><strong>Seguridad:</strong> Credenciales débiles y falta de cifrado</li>
+        <li><strong>Escalabilidad:</strong> Imposible crecer ante más usuarios</li>
+        <li><strong>Disponibilidad:</strong> Inaccesible fuera del campus universitario</li>
+        <li><strong>Mantenibilidad:</strong> Código monolítico difícil de actualizar</li>
+        </ul>

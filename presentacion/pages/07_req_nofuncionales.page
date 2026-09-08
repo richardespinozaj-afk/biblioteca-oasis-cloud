@@ -1,0 +1,200 @@
+pageType: content
+background:
+  type: solid
+  color: "#ffffff"
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds: [0, 0, 960, 50]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: header-title
+    elementType: text
+    bounds: [30, 0, 500, 50]
+    content:
+      color: "#ffffff"
+      fontSize: 20
+      bold: true
+      align: [left, middle]
+      text: "3. Requerimientos no funcionales"
+  - elementId: nf1-bg
+    elementType: shape
+    bounds: [50, 80, 280, 130]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e8f0fe"}
+  - elementId: nf1-icon
+    elementType: icon
+    bounds: [160, 95, 40, 40]
+    iconName: "fas:clock"
+    fill: {type: solid, color: "$primary"}
+  - elementId: nf1-title
+    elementType: text
+    bounds: [60, 140, 260, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$primary"
+      align: [center, middle]
+      text: "Disponibilidad"
+  - elementId: nf1-desc
+    elementType: text
+    bounds: [60, 168, 260, 35]
+    content:
+      fontSize: 12
+      align: [center, middle]
+      text: "24/7 con uptime mínimo del 99.9%"
+  - elementId: nf2-bg
+    elementType: shape
+    bounds: [350, 80, 280, 130]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e6f4ea"}
+  - elementId: nf2-icon
+    elementType: icon
+    bounds: [460, 95, 40, 40]
+    iconName: "fas:shield-halved"
+    fill: {type: solid, color: "$secondary"}
+  - elementId: nf2-title
+    elementType: text
+    bounds: [360, 140, 260, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$secondary"
+      align: [center, middle]
+      text: "Seguridad"
+  - elementId: nf2-desc
+    elementType: text
+    bounds: [360, 168, 260, 35]
+    content:
+      fontSize: 12
+      align: [center, middle]
+      text: "JWT, BCrypt, HTTPS, RBAC"
+  - elementId: nf3-bg
+    elementType: shape
+    bounds: [650, 80, 280, 130]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#fff3e0"}
+  - elementId: nf3-icon
+    elementType: icon
+    bounds: [760, 95, 40, 40]
+    iconName: "fas:arrows-up-down-left-right"
+    fill: {type: solid, color: "#f57c00"}
+  - elementId: nf3-title
+    elementType: text
+    bounds: [660, 140, 260, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#f57c00"
+      align: [center, middle]
+      text: "Escalabilidad"
+  - elementId: nf3-desc
+    elementType: text
+    bounds: [660, 168, 260, 35]
+    content:
+      fontSize: 12
+      align: [center, middle]
+      text: "Horizontal con Kubernetes (GKE)"
+  - elementId: nf4-bg
+    elementType: shape
+    bounds: [50, 230, 280, 130]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#f3e8fd"}
+  - elementId: nf4-icon
+    elementType: icon
+    bounds: [160, 245, 40, 40]
+    iconName: "fas:wrench"
+    fill: {type: solid, color: "#9334e6"}
+  - elementId: nf4-title
+    elementType: text
+    bounds: [60, 290, 260, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#9334e6"
+      align: [center, middle]
+      text: "Mantenibilidad"
+  - elementId: nf4-desc
+    elementType: text
+    bounds: [60, 318, 260, 35]
+    content:
+      fontSize: 12
+      align: [center, middle]
+      text: "Código modular, separación de capas"
+  - elementId: nf5-bg
+    elementType: shape
+    bounds: [350, 230, 280, 130]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#e0f7fa"}
+  - elementId: nf5-icon
+    elementType: icon
+    bounds: [460, 245, 40, 40]
+    iconName: "fas:gauge-high"
+    fill: {type: solid, color: "#0097a7"}
+  - elementId: nf5-title
+    elementType: text
+    bounds: [360, 290, 260, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "#0097a7"
+      align: [center, middle]
+      text: "Rendimiento"
+  - elementId: nf5-desc
+    elementType: text
+    bounds: [360, 318, 260, 35]
+    content:
+      fontSize: 12
+      align: [center, middle]
+      text: "Respuesta API < 2 segundos"
+  - elementId: nf6-bg
+    elementType: shape
+    bounds: [650, 230, 280, 130]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "#fce8e6"}
+  - elementId: nf6-icon
+    elementType: icon
+    bounds: [760, 245, 40, 40]
+    iconName: "fas:database"
+    fill: {type: solid, color: "$danger"}
+  - elementId: nf6-title
+    elementType: text
+    bounds: [660, 290, 260, 25]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$danger"
+      align: [center, middle]
+      text: "Backup"
+  - elementId: nf6-desc
+    elementType: text
+    bounds: [660, 318, 260, 35]
+    content:
+      fontSize: 12
+      align: [center, middle]
+      text: "Automático diario de BD y archivos"
+  - elementId: impacto-title
+    elementType: text
+    bounds: [50, 390, 860, 30]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$primary"
+      align: [left, middle]
+      text: "Impacto de los requerimientos no funcionales:"
+  - elementId: impacto-text
+    elementType: text
+    bounds: [50, 430, 860, 80]
+    content:
+      fontSize: 14
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p>Estos requerimientos garantizan que el sistema sea <strong>confiable, seguro y escalable</strong>.</p>
+        <p>Cumplen con estándares empresariales y preparan el sistema para crecer sin perder calidad.</p>
