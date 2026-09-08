@@ -1,0 +1,55 @@
+version: "3.8"
+
+services:
+  # Base de datos MySQL para desarrollo local
+  mysql:
+    image: mysql:8.0
+    container_name: oasis-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: oasis
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./backend/src/main/resources/db/oasis_seed.sql:/docker-entrypoint-initdb.d/01-seed.sql
+    networks:
+      - oasis-network
+
+  # Backend Spring Boot
+  backend:
+    build: ./backend
+    container_name: oasis-backend
+    restart: always
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/oasis?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Lima
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      JWT_SECRET: bibliotecaOasisSecretKey2026IntegracionServiciosCloudGCPUTP
+      JWT_EXPIRATION: 86400000
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+    networks:
+      - oasis-network
+
+  # Frontend Angular (servido por Nginx)
+  frontend:
+    build: ./frontend
+    container_name: oasis-frontend
+    restart: always
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+    networks:
+      - oasis-network
+
+volumes:
+  mysql_data:
+
+networks:
+  oasis-network:
+    driver: bridge

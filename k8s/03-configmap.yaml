@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: oasis-config
+  namespace: biblioteca-oasis
+data:
+  # Reemplazar con la IP privada o el nombre de conexión de Cloud SQL
+  DB_HOST: "localhost"
+  DB_PORT: "3306"
+  CORS_ORIGINS: "https://tu-dominio.com,http://localhost:4200"
